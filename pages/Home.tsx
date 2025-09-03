@@ -98,7 +98,7 @@ const AboutSection: React.FC = () => (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://picsum.photos/seed/about/600/400" alt="Team collaborating" className="rounded-lg shadow-2xl"/>
+                    <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl"/>
                 </div>
                 <div>
                     <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
