@@ -95,21 +95,19 @@ const ImageBreaker: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => (
-    <section className="py-20 bg-slate-900">
+    // Add id="about" to this section
+    <section id="about" className="py-20 bg-slate-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    {/* Image size reduced */}
                     <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl mx-auto w-4/5"/>
                 </div>
                 <div>
-                    {/* Heading size increased from text-base to text-xl */}
-                    <h2 className="text-xl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
-                    
+                    <h2 className="text-xxl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
                     <p className="mt-4 text-lg text-slate-400">
                        Kenny Steyn established GreenTree Technologies in 2007 due to the need for IT solutions to business problems, however it did not take long to establish that many businesses were looking for IT solutions to address a business problem. Kenny began to address business problems first, thus eliminating vast amounts of unnecessary expenses on a solution that would not really address the issue at hand. This then allowed for additional budget to be used for IT to improve business thus making a significant impact on the bottom line.
-
-Kenny is an ordinary kind of guy with a very extraordinary way of thinking and analyzing problems. After a coffee with him, you will come away excited, energized, enthusiastic and encouraged. He has the ability to make complex situations clearer and impossible situations, POSSIBLE.
+                       <br/><br/>
+                       Kenny is an ordinary kind of guy with a very extraordinary way of thinking and analyzing problems. After a coffee with him, you will come away excited, energized, enthusiastic and encouraged. He has the ability to make complex situations clearer and impossible situations, POSSIBLE.
                     </p>
                 </div>
             </AnimatedSection>
@@ -118,7 +116,7 @@ Kenny is an ordinary kind of guy with a very extraordinary way of thinking and a
 );
 
 const OfferingSection: React.FC = () => (
-    <section className="py-20 bg-slate-800/50">
+    <section id="services" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="text-center">
                 <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">What We Offer</h2>
@@ -217,7 +215,7 @@ const Testimonials: React.FC = () => {
 
 const ContactFormSection: React.FC = () => {
     return (
-        <section className="py-20 bg-slate-800/50">
+        <section id="contact" className="py-20 bg-slate-800/50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <AnimatedSection className="text-center mb-12">
                      <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Get In Touch</h2>
