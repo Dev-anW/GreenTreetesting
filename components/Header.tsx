@@ -16,7 +16,7 @@ const Header: React.FC = () => {
                     <div className="flex items-center space-x-3">
                         <Link to="/" onClick={closeMenu} className="flex items-center space-x-3 text-brand-lime">
                             <Logo className="h-8 w-8" />
-                            <span className="text-2xl font-bold text-slate-100 tracking-tight">Synergy</span>
+                            <span className="text-2xl font-bold text-slate-100 tracking-tight">GreenTree Technologies</span>
                         </Link>
                     </div>
 
