@@ -29,12 +29,13 @@ const Hero: React.FC = () => (
     <div className="relative overflow-hidden bg-slate-900">
         <div className="absolute inset-0">
             <img src="https://picsum.photos/seed/hero/1920/1080" alt="Abstract background" className="w-full h-full object-cover opacity-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+            {/* Gradient opacity reduced from via-slate-900/80 to via-slate-900/70 */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-white leading-tight">
-    <span className="text-brand-lime">IT</span> and <span className="text-brand-lime">Business</span> Consulting Services For <span className="text-brand-lime">Your</span> <span className="text-brand-lime">Business</span>
-</h1>
+                <span className="text-brand-lime">IT</span> and <span className="text-brand-lime">Business</span> Consulting Services For <span className="text-brand-lime">Your</span> <span className="text-brand-lime">Business</span>
+            </h1>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
                 <button className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                     Contact Us
@@ -98,10 +99,12 @@ const AboutSection: React.FC = () => (
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl"/>
+                    {/* Image size reduced */}
+                    <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl mx-auto w-4/5"/>
                 </div>
                 <div>
-                    <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
+                    {/* Heading size increased from text-base to text-xl */}
+                    <h2 className="text-xl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
                     
                     <p className="mt-4 text-lg text-slate-400">
                        Kenny Steyn established GreenTree Technologies in 2007 due to the need for IT solutions to business problems, however it did not take long to establish that many businesses were looking for IT solutions to address a business problem. Kenny began to address business problems first, thus eliminating vast amounts of unnecessary expenses on a solution that would not really address the issue at hand. This then allowed for additional budget to be used for IT to improve business thus making a significant impact on the bottom line.
