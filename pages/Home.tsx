@@ -4,7 +4,6 @@ import { OFFERING_SERVICES, TESTIMONIALS } from '../constants';
 import { useElementOnScreen } from '../hooks/useElementOnScreen';
 import ContactForm from '../components/ContactForm';
 
-// Helper component for animations
 const AnimatedSection: React.FC<{children: React.ReactNode, className?: string}> = ({ children, className = '' }) => {
   const [ref, isVisible] = useElementOnScreen({
     root: null,
@@ -25,29 +24,24 @@ const AnimatedSection: React.FC<{children: React.ReactNode, className?: string}>
 };
 
 
-// Define components locally to avoid file structure complexity for this request.
-// In a real app, these would be in components/home/*.tsx
+
 const Hero: React.FC = () => (
     <div className="relative overflow-hidden bg-slate-900">
         <div className="absolute inset-0">
             <img src="https://picsum.photos/seed/hero/1920/1080" alt="Abstract background" className="w-full h-full object-cover opacity-10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-white leading-tight">
-                <span className="text-brand-lime">Accelerate</span> Your Growth. <br />
-                <span className="block mt-2">Unlock Your Potential.</span>
+                <span className="text-brand-lime">IT</span> and <span className="text-brand-lime">Business</span> Consulting Services For <span className="text-brand-lime">Your</span> <span className="text-brand-lime">Business</span>
             </h1>
-            <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-300">
-                We provide expert analysis, strategic planning, and hands-on implementation to help your business thrive in a competitive landscape.
-            </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <button className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
-                    Discover Our Services
-                </button>
-                <button className="bg-transparent border-2 border-slate-600 text-slate-200 font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 hover:border-slate-500 transition-colors duration-300 w-full sm:w-auto">
+                <Link to="/contact" className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                     Contact Us
-                </button>
+                </Link>
+                <Link to="/#about" className="bg-transparent border-2 border-slate-600 text-slate-200 font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 hover:border-slate-500 transition-colors duration-300 w-full sm:w-auto">
+                    Learn More
+                </Link>
             </div>
         </div>
     </div>
@@ -56,29 +50,34 @@ const Hero: React.FC = () => (
 const InfoPanel: React.FC = () => (
     <section className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <AnimatedSection className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div className="p-6">
-                    <div className="flex items-center justify-center mb-4">
-                        <svg className="w-12 h-12 text-brand-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V3m0 18v-3" /></svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">Strategic Insight</h3>
-                    <p className="mt-2 text-slate-400">Leverage our deep industry knowledge to make informed, strategic decisions that drive long-term success.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <div className="text-white">
+                    <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">
+                        20+ Years in <span className="text-brand-lime">IT and Business Consulting</span> have taught me this
+                    </h2>
+                    <ul className="space-y-4 text-slate-300 text-lg">
+                        <li className="ml-0">Work SMARTER, not HARDER.</li>
+                        <li className="ml-4">10% of a successful business is worth more than 100% of a failing one.</li>
+                        <li className="ml-8">If you fail to plan, you plan to fail.</li>
+                        <li className="ml-12">Team work has far more benefits than risks.</li>
+                        <li className="ml-16">Why bump your head yourself when you can learn from others who have already done so?</li>
+                        <li className="ml-20">Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health.</li>
+                        <li className="ml-24">Don't work for money, make money work for you.</li>
+                    </ul>
+                   <Link to="/#services" className="mt-10 ml-24 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300 inline-block">
+                        Our Services
+                    </Link>
                 </div>
-                <div className="p-6">
-                    <div className="flex items-center justify-center mb-4">
-                        <svg className="w-12 h-12 text-brand-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+
+                
+                <div className="flex justify-center items-center">
+                    <div className="w-full h-96 bg-slate-700 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out">
+                       
+                        <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/04/pexels-mikael-blomkvist-6476260-1.png" alt="Consulting Services" className="w-full h-full object-cover" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white">Operational Excellence</h3>
-                    <p className="mt-2 text-slate-400">Optimize your processes and workflows for maximum efficiency, productivity, and cost savings.</p>
                 </div>
-                <div className="p-6">
-                    <div className="flex items-center justify-center mb-4">
-                        <svg className="w-12 h-12 text-brand-lime" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">Guaranteed Results</h3>
-                    <p className="mt-2 text-slate-400">Our partnership is built on trust and a commitment to delivering measurable, impactful results for your business.</p>
-                </div>
-            </AnimatedSection>
+            </div>
         </div>
     </section>
 );
@@ -95,17 +94,18 @@ const ImageBreaker: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => (
-    <section className="py-20 bg-slate-900">
+    <section id="about" className="py-20 bg-slate-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://picsum.photos/seed/about/600/400" alt="Team collaborating" className="rounded-lg shadow-2xl"/>
+                    <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl mx-auto w-4/5"/>
                 </div>
                 <div>
-                    <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Who We Are</h2>
-                    <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Your Partner in Business Transformation</p>
+                    <h2 className="text-xxl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
                     <p className="mt-4 text-lg text-slate-400">
-                        Synergy Solutions was founded on the principle that every business has the potential for greatness. We are a team of seasoned consultants, analysts, and project managers dedicated to helping you navigate complexities, overcome challenges, and seize opportunities. Our collaborative approach ensures we become a true extension of your team.
+                       Kenny Steyn established GreenTree Technologies in 2007 due to the need for IT solutions to business problems, however it did not take long to establish that many businesses were looking for IT solutions to address a business problem. Kenny began to address business problems first, thus eliminating vast amounts of unnecessary expenses on a solution that would not really address the issue at hand. This then allowed for additional budget to be used for IT to improve business thus making a significant impact on the bottom line.
+                       <br/><br/>
+                       Kenny is an ordinary kind of guy with a very extraordinary way of thinking and analyzing problems. After a coffee with him, you will come away excited, energized, enthusiastic and encouraged. He has the ability to make complex situations clearer and impossible situations, POSSIBLE.
                     </p>
                 </div>
             </AnimatedSection>
@@ -114,11 +114,10 @@ const AboutSection: React.FC = () => (
 );
 
 const OfferingSection: React.FC = () => (
-    <section className="py-20 bg-slate-800/50">
+    <section id="services" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="text-center">
-                <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Our Offerings</h2>
-                <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">A Full Suite of Business Solutions</p>
+                <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">What We Offer</h2>
             </AnimatedSection>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {OFFERING_SERVICES.map((service, index) => (
@@ -141,12 +140,12 @@ const CtaBanner: React.FC = () => (
     <div className="bg-brand-lime">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-extrabold text-slate-900">
-                Ready to elevate your business to the next level?
+                IT and Business Consulting Services For Your  Business Today
             </h2>
             <div className="mt-8">
-                <button className="bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 transform hover:scale-105">
+                <Link to="/contact" className="bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 transform hover:scale-105 inline-block">
                     Let's Talk
-                </button>
+                </Link>
             </div>
         </div>
     </div>
@@ -214,11 +213,11 @@ const Testimonials: React.FC = () => {
 
 const ContactFormSection: React.FC = () => {
     return (
-        <section className="py-20 bg-slate-800/50">
+        <section id="contact" className="py-20 bg-slate-800/50">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <AnimatedSection className="text-center mb-12">
                      <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Get In Touch</h2>
-                     <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Let's Start a Conversation</p>
+                     <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">What if your greatest opportunity lies just other side of this moment? Would you take the chance?</p>
                 </AnimatedSection>
                 <AnimatedSection className="max-w-xl mx-auto">
                     <ContactForm />
