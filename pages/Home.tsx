@@ -118,8 +118,7 @@ const OfferingSection: React.FC = () => (
     <section className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="text-center">
-                <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Our Offerings</h2>
-                <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">A Full Suite of Business Solutions</p>
+                <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">What We Offer</h2>
             </AnimatedSection>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {OFFERING_SERVICES.map((service, index) => (
