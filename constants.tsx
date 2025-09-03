@@ -2,7 +2,7 @@ import React from 'react';
 import type { NavLink, Service, Testimonial } from './types';
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
-    <img src="/assets/logo.png" alt="Synergy Logo" className={className} />
+    <img src="src/assets/logo1.png" alt="Synergy Logo" className={className} />
 );
 
 export const NAV_LINKS: NavLink[] = [
