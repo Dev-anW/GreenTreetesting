@@ -1,5 +1,4 @@
-
-import React from 'react';
+mport React from 'react';
 import type { NavLink, Service, Testimonial } from './types';
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
@@ -34,32 +33,38 @@ export const OFFERING_SERVICES: Service[] = [
     {
         icon: <ShieldCheckIcon />,
         title: 'Cybersecurity',
-        description: 'With our Cybersecurity Services, you can rest assured that your business is protected from cyber threats and that your systems and data are secure. We work closely with you to understand your unique cybersecurity needs and develop customized solutions that meet your specific requirements. Don't leave your business vulnerable to cyber attacks. Contact us today to learn more about our Cybersecurity Services and how we can help protect your business.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `With our Cybersecurity Services, you can rest assured that your business is protected from cyber threats and that your systems and data are secure. We work closely with you to understand your unique cybersecurity needs and develop customized solutions that meet your specific requirements. Don't leave your business vulnerable to cyber attacks. Contact us today to learn more about our Cybersecurity Services and how we can help protect your business.`
     },
     {
         icon: <ChartBarIcon />,
         title: 'Business Development',
-        description: 'As a business owner, you know that growth and success don't happen by chance. It takes a strategic approach to business development to achieve your goals and take your business to the next level. That's where our Business Development Services come in. With our Business Development Services, you can accelerate your growth and take your business to the next level. We work closely with you to understand your unique needs and develop customized solutions that meet your specific requirements. Don't wait to achieve your growth objectives. Contact us today to learn more about our Business Development Services and how we can help take your business to new heights.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `As a business owner, you know that growth and success don't happen by chance. It takes a strategic approach to business development to achieve your goals and take your business to the next level. That's where our Business Development Services come in. With our Business Development Services, you can accelerate your growth and take your business to the next level. We work closely with you to understand your unique needs and develop customized solutions that meet your specific requirements. Don't wait to achieve your growth objectives. Contact us today to learn more about our Business Development Services and how we can help take your business to new heights.`
     },
     {
         icon: <ClipboardDocumentListIcon />,
         title: 'Project Management',
-        description: 'Effective project management is key to achieving success in any organization. Whether you're launching a new product, implementing a new system, or executing a strategic initiative, you need a project manager who can drive results and ensure success. That's where our Project Management Services come in. Don't let your projects fall short of their potential. Contact us today to learn more about our Project Management Services and how we can help drive success in your organization.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `Effective project management is key to achieving success in any organization. Whether you're launching a new product, implementing a new system, or executing a strategic initiative, you need a project manager who can drive results and ensure success. That's where our Project Management Services come in. Don't let your projects fall short of their potential. Contact us today to learn more about our Project Management Services and how we can help drive success in your organization.`
     },
     {
         icon: <MagnifyingGlassIcon />,
         title: 'Business Analysis',
-        description: 'In today's fast-paced business environment, it's more important than ever to have accurate and timely information to make informed decisions. That's where our Business Analysis Services come in. Don't make important business decisions without the insights you need. Contact us today to learn more about our Business Analysis Services and how we can help you make better decisions and achieve your business objectives.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `In today's fast-paced business environment, it's more important than ever to have accurate and timely information to make informed decisions. That's where our Business Analysis Services come in. Don't make important business decisions without the insights you need. Contact us today to learn more about our Business Analysis Services and how we can help you make better decisions and achieve your business objectives.`
     },
     {
         icon: <ArrowsRightLeftIcon />,
         title: 'Business Process Analysis',
-        description: 'As your business grows, your processes need to evolve and adapt to keep up with changing demands. That's where our Business Process Analysis Services come in. Don't let inefficiencies and bottlenecks slow down your business. Contact us today to learn more about our Business Process Analysis Services and how we can help you optimize your business processes for success.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `As your business grows, your processes need to evolve and adapt to keep up with changing demands. That's where our Business Process Analysis Services come in. Don't let inefficiencies and bottlenecks slow down your business. Contact us today to learn more about our Business Process Analysis Services and how we can help you optimize your business processes for success.`
     },
     {
         icon: <LifebuoyIcon />,
         title: 'Business Rescue',
-        description: 'Running a business is never easy, and sometimes things don't go according to plan. If you're struggling to keep your business afloat, our Business Rescue Services can help. Don't let financial and operational challenges derail your business. Contact us today to learn more about our Business Rescue Services and how we can help you get back on track.'
+        // FIX: Changed single quotes to backticks to allow for apostrophes
+        description: `Running a business is never easy, and sometimes things don't go according to plan. If you're struggling to keep your business afloat, our Business Rescue Services can help. Don't let financial and operational challenges derail your business. Contact us today to learn more about our Business Rescue Services and how we can help you get back on track.`
     }
 ];
 
