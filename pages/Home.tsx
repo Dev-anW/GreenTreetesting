@@ -54,25 +54,26 @@ const InfoPanel: React.FC = () => (
                 
                 <div className="text-white">
                     <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">
-                        Work <span className="text-brand-lime">SMARTER</span>, not HARDER
+                        20+ Years in <span className="text-brand-lime">IT and Business Consulting</span> have taught me this
                     </h2>
                     <ul className="space-y-4 text-slate-300 text-lg">
-                        <li className="ml-0">10% of a successful business is worth more than 100% of a failing one.</li>
-                        <li className="ml-4">If you fail to plan, you plan to fail.</li>
-                        <li className="ml-8">Team work has far more benefits than risks.</li>
-                        <li className="ml-12">Why bump your head yourself when you can learn from others who have already done so?</li>
-                        <li className="ml-16">Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health.</li>
-                        <li className="ml-20">Don't work for money, make money work for you.</li>
+                        <li className="ml-0">Work SMARTER, not HARDER.</li>
+                        <li className="ml-4">10% of a successful business is worth more than 100% of a failing one.</li>
+                        <li className="ml-8">If you fail to plan, you plan to fail.</li>
+                        <li className="ml-12">Team work has far more benefits than risks.</li>
+                        <li className="ml-16">Why bump your head yourself when you can learn from others who have already done so?</li>
+                        <li className="ml-20">Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health.</li>
+                        <li className="ml-24">Don't work for money, make money work for you.</li>
                     </ul>
                     <button className="mt-10 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300">
                         Our Services
                     </button>
                 </div>
 
-               
+                
                 <div className="flex justify-center items-center">
                     <div className="w-full h-96 bg-slate-700 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out">
-                      
+                       
                         <img src="https://via.placeholder.com/600x400" alt="Consulting Services" className="w-full h-full object-cover" />
                     </div>
                 </div>
