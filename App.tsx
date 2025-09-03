@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
 import Clients from './pages/Clients';
 import Contact from './pages/Contact';
 
@@ -13,7 +10,10 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   React.useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to top if the path does not contain a hash
+    if (window.location.hash === '') {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;
