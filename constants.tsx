@@ -1,4 +1,4 @@
-mport React from 'react';
+import React from 'react';
 import type { NavLink, Service, Testimonial } from './types';
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
