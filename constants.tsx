@@ -14,10 +14,10 @@ export const Logo: React.FC<{ className?: string }> = ({ className }) => (
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Services', path: '/services' },
+  { label: 'About', path: '/#about' },       // Changed
+  { label: 'Services', path: '/#services' }, // Changed
   { label: 'Clients', path: '/clients' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'Contact', path: '/#contact' },    // Changed
 ];
 
 export const FOOTER_SERVICES: string[] = [
