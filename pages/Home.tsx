@@ -101,7 +101,7 @@ const AboutSection: React.FC = () => (
                     <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/07/3.jpg" alt="Team collaborating" className="rounded-lg shadow-2xl mx-auto w-4/5"/>
                 </div>
                 <div>
-                    <h2 className="text-xxl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
+                    <h1 className="text-xxl font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h1>
                     <p className="mt-4 text-lg text-slate-400">
                        Kenny Steyn established GreenTree Technologies in 2007 due to the need for IT solutions to business problems, however it did not take long to establish that many businesses were looking for IT solutions to address a business problem. Kenny began to address business problems first, thus eliminating vast amounts of unnecessary expenses on a solution that would not really address the issue at hand. This then allowed for additional budget to be used for IT to improve business thus making a significant impact on the bottom line.
                        <br/><br/>
@@ -117,7 +117,7 @@ const OfferingSection: React.FC = () => (
     <section id="services" className="py-20 bg-slate-800/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="text-center">
-                <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">What We Offer</h2>
+                <h1 className="text-base font-semibold tracking-wider text-brand-lime uppercase">What We Offer</h1>
             </AnimatedSection>
             <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 {OFFERING_SERVICES.map((service, index) => (
