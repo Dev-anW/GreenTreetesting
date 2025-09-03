@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+// Import Link in addition to NavLink
+import { NavLink, Link } from 'react-router-dom';
 import { NAV_LINKS, Logo } from '../constants';
 
 const Header: React.FC = () => {
@@ -26,7 +26,13 @@ const Header: React.FC = () => {
                             <NavLink
                                 key={link.label}
                                 to={link.path}
-                                style={({ isActive }) => isActive ? activeLinkStyle : {}}
+                                // The `isActive` check needs to be adjusted for hash links
+                                style={({ isActive, location }) => {
+                                    if (isActive || (link.path.includes('#') && location.hash === link.path.substring(link.path.indexOf('#')))) {
+                                        return activeLinkStyle;
+                                    }
+                                    return {};
+                                }}
                                 className="text-slate-300 hover:text-brand-lime transition-colors duration-200"
                             >
                                 {link.label}
@@ -34,9 +40,10 @@ const Header: React.FC = () => {
                         ))}
                     </nav>
                     <div className="hidden md:block">
-                        <button className="bg-brand-lime text-slate-900 font-semibold px-5 py-2 rounded-lg hover:bg-lime-200 transition-colors duration-300 transform hover:scale-105">
+                        {/* Changed button to a Link component */}
+                        <Link to="/#contact" className="bg-brand-lime text-slate-900 font-semibold px-5 py-2 rounded-lg hover:bg-lime-200 transition-colors duration-300 transform hover:scale-105">
                             Book a Meeting
-                        </button>
+                        </Link>
                     </div>
                     <div className="md:hidden flex items-center">
                         <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-300 hover:text-brand-lime focus:outline-none">
@@ -55,15 +62,21 @@ const Header: React.FC = () => {
                                 key={link.label}
                                 to={link.path}
                                 onClick={() => setIsMenuOpen(false)}
-                                style={({ isActive }) => isActive ? activeLinkStyle : {}}
+                                style={({ isActive, location }) => {
+                                    if (isActive || (link.path.includes('#') && location.hash === link.path.substring(link.path.indexOf('#')))) {
+                                        return activeLinkStyle;
+                                    }
+                                    return {};
+                                }}
                                 className="text-slate-300 hover:text-brand-lime transition-colors duration-200 text-lg"
                             >
                                 {link.label}
                             </NavLink>
                         ))}
-                        <button className="bg-brand-lime text-slate-900 font-semibold px-6 py-3 mt-4 rounded-lg hover:bg-lime-200 transition-colors duration-300">
+                        {/* Changed button to a Link component for the mobile menu */}
+                        <Link to="/#contact" onClick={() => setIsMenuOpen(false)} className="bg-brand-lime text-slate-900 font-semibold px-6 py-3 mt-4 rounded-lg hover:bg-lime-200 transition-colors duration-300">
                             Book a Meeting
-                        </button>
+                        </Link>
                     </nav>
                 </div>
             )}
