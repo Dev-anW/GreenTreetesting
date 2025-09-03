@@ -65,7 +65,7 @@ const InfoPanel: React.FC = () => (
                         <li className="ml-20">Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health.</li>
                         <li className="ml-24">Don't work for money, make money work for you.</li>
                     </ul>
-                    <button className="mt-10 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300">
+                   <button className="mt-10 ml-24 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300">
                         Our Services
                     </button>
                 </div>
@@ -101,10 +101,12 @@ const AboutSection: React.FC = () => (
                     <img src="https://picsum.photos/seed/about/600/400" alt="Team collaborating" className="rounded-lg shadow-2xl"/>
                 </div>
                 <div>
-                    <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Who We Are</h2>
-                    <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Your Partner in Business Transformation</p>
+                    <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">About GreenTree Technologies</h2>
+                    
                     <p className="mt-4 text-lg text-slate-400">
-                        Synergy Solutions was founded on the principle that every business has the potential for greatness. We are a team of seasoned consultants, analysts, and project managers dedicated to helping you navigate complexities, overcome challenges, and seize opportunities. Our collaborative approach ensures we become a true extension of your team.
+                       Kenny Steyn established GreenTree Technologies in 2007 due to the need for IT solutions to business problems, however it did not take long to establish that many businesses were looking for IT solutions to address a business problem. Kenny began to address business problems first, thus eliminating vast amounts of unnecessary expenses on a solution that would not really address the issue at hand. This then allowed for additional budget to be used for IT to improve business thus making a significant impact on the bottom line.
+
+Kenny is an ordinary kind of guy with a very extraordinary way of thinking and analyzing problems. After a coffee with him, you will come away excited, energized, enthusiastic and encouraged. He has the ability to make complex situations clearer and impossible situations, POSSIBLE.
                     </p>
                 </div>
             </AnimatedSection>
