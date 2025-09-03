@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTree Technologies - IT & Business Consulting</title>
+    <meta name="description" content="GreenTree Technologies offers expert IT and Business Consulting services to help your business work smarter, not harder.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">GreenTree Tech</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="clients.html" class="nav-link">Clients</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="cta-button nav-cta">Book a Meeting</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>IT and Business Consulting For Your Business</h1>
+                <p>Work SMARTER, not HARDER.</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="cta-button">Contact Us</a>
+                    <a href="#about" class="cta-button secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About GreenTree Technologies</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Kenny Steyn established GreenTree Technologies in 2007 to solve business problems with IT solutions. He focuses on understanding the business problem first, eliminating unnecessary expenses on solutions that don't address the core issue.</p>
+                    <p>This approach allows for budget to be used to improve the business and make a significant impact. Kenny has an extraordinary way of thinking and analyzing problems, making complex situations clear and impossible situations possible.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/04/logo1.png" alt="GreenTree Technologies Logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content-section bg-light">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Business Development</h3>
+                    <p>Accelerate your growth and take your business to the next level with our strategic business development services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business from cyber threats. We work with you to secure your systems and data effectively.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Project Management</h3>
+                    <p>Drive results and ensure the success of your projects with our expert project management services.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Analysis</h3>
+                    <p>Get the insights you need to make better, more informed business decisions for future growth.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Process Analysis</h3>
+                    <p>We help you identify inefficiencies and optimize your business processes for maximum success.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Business Rescue</h3>
+                    <p>Facing financial or operational challenges? We provide the expertise to help get your business back on track.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="content-section">
+             <h2>Client Testimonials</h2>
+             <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Kenny is an organised thinker, clear in his communication and focussed on his objectives. A pleasure to work with."</p>
+                    <cite>— Chris Stevens</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Kenny is a man of vision with a heart for the people. His product was developed from start to finish and is nothing short of excellent."</p>
+                    <cite>— Michelle De Bruin</cite>
+                </div>
+                 <div class="testimonial">
+                    <p>"Taking the full measure of the man, I can honestly say that Kenny symbolizes the meaning of the word - Integrity."</p>
+                    <cite>— Ryan Mettler</cite>
+                </div>
+             </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Grow Your Business?</h2>
+            <p>What if your greatest opportunity lies just on the other side of this moment?</p>
+            <a href="contact.html" class="cta-button">Book a Free Consultation</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 GreenTree Technologies. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+    </script>
+
+</body>
+</html>
