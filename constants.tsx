@@ -2,14 +2,7 @@ import React from 'react';
 import type { NavLink, Service, Testimonial } from './types';
 
 export const Logo: React.FC<{ className?: string }> = ({ className }) => (
-    <svg className={className} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <g transform="translate(50,50) rotate(45)">
-            <path d="M0,-40 A40,40 0 0,1 40,0 L0,0 Z" fill="currentColor"/>
-            <path d="M40,0 A40,40 0 0,1 0,40 L0,0 Z" fill="currentColor" opacity="0.75"/>
-            <path d="M0,40 A40,40 0 0,1 -40,0 L0,0 Z" fill="currentColor" opacity="0.5"/>
-            <path d="M-40,0 A40,40 0 0,1 0,-40 L0,0 Z" fill="currentColor" opacity="0.25"/>
-        </g>
-    </svg>
+    <img src={logoImage} alt="GreenTree Logo" className={className} />
 );
 
 export const NAV_LINKS: NavLink[] = [
