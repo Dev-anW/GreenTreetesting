@@ -141,7 +141,7 @@ const CtaBanner: React.FC = () => (
     <div className="bg-brand-lime">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-extrabold text-slate-900">
-                Ready to elevate your business to the next level?
+                IT and Business Consulting Services For Your  Business Today
             </h2>
             <div className="mt-8">
                 <button className="bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 transform hover:scale-105">
