@@ -74,7 +74,7 @@ const InfoPanel: React.FC = () => (
                 <div className="flex justify-center items-center">
                     <div className="w-full h-96 bg-slate-700 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 ease-in-out">
                        
-                        <img src="https://via.placeholder.com/600x400" alt="Consulting Services" className="w-full h-full object-cover" />
+                        <img src="https://greentreetech.co.za/sitepad-data/uploads/2023/04/pexels-mikael-blomkvist-6476260-1.png" alt="Consulting Services" className="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
