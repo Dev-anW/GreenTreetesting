@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NAV_LINKS, FOOTER_SERVICES, Logo } from '../constants';
@@ -34,7 +33,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {FOOTER_SERVICES.map(service => (
                 <li key={service}>
-                  <Link to="/services" className="text-slate-400 hover:text-brand-lime transition-colors">
+                  <Link to="/#services" className="text-slate-400 hover:text-brand-lime transition-colors">
                     {service}
                   </Link>
                 </li>
