@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
              <Link to="/" className="flex items-center space-x-3 text-brand-lime mb-4">
                 <Logo className="h-8 w-8" />
-                <span className="text-2xl font-bold text-slate-100 tracking-tight">Synergy</span>
+                <span className="text-2xl font-bold text-slate-100 tracking-tight">GreenTree Technology</span>
             </Link>
             <p className="text-slate-400">Driving growth through strategic innovation and expert consultation.</p>
           </div>
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Synergy Solutions. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} GreenTree Testing. All rights reserved.</p>
         </div>
       </div>
     </footer>
