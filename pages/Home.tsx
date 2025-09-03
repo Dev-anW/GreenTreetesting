@@ -218,7 +218,7 @@ const ContactFormSection: React.FC = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <AnimatedSection className="text-center mb-12">
                      <h2 className="text-base font-semibold tracking-wider text-brand-lime uppercase">Get In Touch</h2>
-                     <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">Let's Start a Conversation</p>
+                     <p className="mt-2 text-3xl font-extrabold text-white tracking-tight sm:text-4xl">What if your greatest opportunity lies just other side of this moment? Would you take the chance?</p>
                 </AnimatedSection>
                 <AnimatedSection className="max-w-xl mx-auto">
                     <ContactForm />
