@@ -29,7 +29,6 @@ const Hero: React.FC = () => (
     <div className="relative overflow-hidden bg-slate-900">
         <div className="absolute inset-0">
             <img src="https://picsum.photos/seed/hero/1920/1080" alt="Abstract background" className="w-full h-full object-cover opacity-10" />
-            {/* Gradient opacity reduced from via-slate-900/80 to via-slate-900/70 */}
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent"></div>
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 text-center">
@@ -37,12 +36,12 @@ const Hero: React.FC = () => (
                 <span className="text-brand-lime">IT</span> and <span className="text-brand-lime">Business</span> Consulting Services For <span className="text-brand-lime">Your</span> <span className="text-brand-lime">Business</span>
             </h1>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-                <button className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
+                <Link to="/contact" className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                     Contact Us
-                </button>
-                <button className="bg-transparent border-2 border-slate-600 text-slate-200 font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 hover:border-slate-500 transition-colors duration-300 w-full sm:w-auto">
+                </Link>
+                <Link to="/#about" className="bg-transparent border-2 border-slate-600 text-slate-200 font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 hover:border-slate-500 transition-colors duration-300 w-full sm:w-auto">
                     Learn More
-                </button>
+                </Link>
             </div>
         </div>
     </div>
@@ -66,9 +65,9 @@ const InfoPanel: React.FC = () => (
                         <li className="ml-20">Keep your balance, don't spend your health to gain your wealth, only to spend your wealth to regain your health.</li>
                         <li className="ml-24">Don't work for money, make money work for you.</li>
                     </ul>
-                   <button className="mt-10 ml-24 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300">
+                   <Link to="/#services" className="mt-10 ml-24 bg-brand-lime text-slate-900 font-bold py-3 px-8 rounded-lg hover:bg-brand-lime/80 transition-colors duration-300 inline-block">
                         Our Services
-                    </button>
+                    </Link>
                 </div>
 
                 
@@ -95,7 +94,6 @@ const ImageBreaker: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => (
-    // Add id="about" to this section
     <section id="about" className="py-20 bg-slate-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <AnimatedSection className="grid md:grid-cols-2 gap-12 items-center">
@@ -145,9 +143,9 @@ const CtaBanner: React.FC = () => (
                 IT and Business Consulting Services For Your  Business Today
             </h2>
             <div className="mt-8">
-                <button className="bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 transform hover:scale-105">
+                <Link to="/contact" className="bg-slate-900 text-white font-semibold px-8 py-3 rounded-lg hover:bg-slate-800 transition-colors duration-300 transform hover:scale-105 inline-block">
                     Let's Talk
-                </button>
+                </Link>
             </div>
         </div>
     </div>
