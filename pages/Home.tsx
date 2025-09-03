@@ -4,7 +4,6 @@ import { OFFERING_SERVICES, TESTIMONIALS } from '../constants';
 import { useElementOnScreen } from '../hooks/useElementOnScreen';
 import ContactForm from '../components/ContactForm';
 
-// Helper component for animations
 const AnimatedSection: React.FC<{children: React.ReactNode, className?: string}> = ({ children, className = '' }) => {
   const [ref, isVisible] = useElementOnScreen({
     root: null,
@@ -25,8 +24,7 @@ const AnimatedSection: React.FC<{children: React.ReactNode, className?: string}>
 };
 
 
-// Define components locally to avoid file structure complexity for this request.
-// In a real app, these would be in components/home/*.tsx
+
 const Hero: React.FC = () => (
     <div className="relative overflow-hidden bg-slate-900">
         <div className="absolute inset-0">
@@ -35,12 +33,8 @@ const Hero: React.FC = () => (
         </div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-40 text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter text-white leading-tight">
-                <span className="text-brand-lime">Accelerate</span> Your Growth. <br />
-                <span className="block mt-2">Unlock Your Potential.</span>
-            </h1>
-            <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-300">
-                We provide expert analysis, strategic planning, and hands-on implementation to help your business thrive in a competitive landscape.
-            </p>
+    <span className="text-brand-lime">IT</span> and <span className="text-brand-lime">Business</span> Consulting Services For <span className="text-brand-lime">Your</span> <span className="text-brand-lime">Business</span>
+</h1>
             <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
                 <button className="bg-brand-lime text-slate-900 font-semibold px-8 py-3 rounded-lg hover:bg-lime-200 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto">
                     Discover Our Services
