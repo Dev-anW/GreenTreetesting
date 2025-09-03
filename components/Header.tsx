@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink, Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { NAV_LINKS, Logo } from '../constants';
 
 const Header: React.FC = () => {
@@ -10,25 +10,26 @@ const Header: React.FC = () => {
     const handleNavClick = (path: string) => {
         setIsMenuOpen(false);
         
-        // Check if the link is an anchor link
         if (path.startsWith('/#')) {
             const hash = path.substring(1); // Keep the '#' => '#about'
             
-            // If we are not on the homepage, navigate there with the hash
             if (location.pathname !== '/') {
                 navigate(`/${hash}`);
             } else {
-                // If we are already on the homepage, just scroll smoothly
                 const element = document.getElementById(hash.substring(1)); // Remove '#' for getElementById
                 if (element) {
                     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             }
         } else {
-            // For regular links like /clients, just navigate
             navigate(path);
         }
     };
+
+    const handleBookMeetingClick = () => {
+        setIsMenuOpen(false);
+        navigate('/contact');
+    }
 
     return (
         <header className="bg-slate-900/80 sticky top-0 z-50 backdrop-blur-sm border-b border-slate-800">
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
                     {/* Desktop CTA Button */}
                     <div className="hidden md:block">
                         <button 
-                            onClick={() => handleNavClick('/#contact')} 
+                            onClick={handleBookMeetingClick} 
                             className="bg-brand-lime text-slate-900 font-semibold px-5 py-2 rounded-lg hover:bg-lime-200 transition-colors duration-300 transform hover:scale-105"
                         >
                             Book a Meeting
@@ -90,7 +91,7 @@ const Header: React.FC = () => {
                             </button>
                         ))}
                         <button 
-                            onClick={() => handleNavClick('/#contact')} 
+                            onClick={handleBookMeetingClick} 
                             className="bg-brand-lime text-slate-900 font-semibold px-6 py-3 mt-4 rounded-lg hover:bg-lime-200 transition-colors duration-300"
                         >
                             Book a Meeting
